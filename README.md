@@ -1,6 +1,6 @@
 # Marcas y modelos de vehiculos
 
-## Brands
+## Info
 Alfa Romeo,
 Acura,
 Audi,
@@ -33,8 +33,8 @@ Land Rover,
 Lexus,
 Lotus
 
-## Models years
+Año de modelos / Models years
 1990 - 2016
 
-## Progress 14 August, 2019
+Progeso 14 de Agosto de 2019 / Progress 14 August, 2019
 ▂▃▄▅▆▆▆▇▇▇███▓▓▒░50%
