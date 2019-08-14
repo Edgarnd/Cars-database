@@ -2,36 +2,36 @@
 Brands and Models Vehicles / Marcas y Modelos de Vehiculos
 
 ## Brands
-Alfa Romeo
-Acura
-Audi
-Bentley
-BMW
-Cadillac
-Chevrolet
-Citroen
-Dacia
-Daewoo
-Daihatsu
-Datsun
-Dodge
-Ferrari
-Fiat
-Ford
-Honda
-Hyundai
-GEO
-Infiniti
-Isuzu
-Iveco
-Jaguar
-Jeep
-Kia
-Lada
-Lamborghini
-Lancia
-Land Rover
-Lexus
+Alfa Romeo,
+Acura,
+Audi,
+Bentley,
+BMW,
+Cadillac,
+Chevrolet,
+Citroen,
+Dacia,
+Daewoo,
+Daihatsu,
+Datsun,
+Dodge,
+Ferrari,
+Fiat,
+Ford,
+Honda,
+Hyundai,
+GEO,
+Infiniti,
+Isuzu,
+Iveco,
+Jaguar,
+Jeep,
+Kia,
+Lada,
+Lamborghini,
+Lancia,
+Land Rover,
+Lexus,
 Lotus
 
 ## Models years
