@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 14-08-2019 a las 16:24:13
+-- Tiempo de generación: 20-08-2019 a las 15:50:27
 -- Versión del servidor: 10.3.16-MariaDB
 -- Versión de PHP: 7.3.2
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `id10497415_pett`
+-- Base de datos: `id10497415_dbcars`
 --
 
 -- --------------------------------------------------------
@@ -1587,6 +1587,646 @@ INSERT INTO `lotusModels` (`modeloBrand`, `modeloNombre`) VALUES
 ('Lotus', 'Lotus Mark I'),
 ('Lotus', 'Lotus Mark II'),
 ('Lotus', 'Lotus Seven');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `maseratiModels`
+--
+
+CREATE TABLE `maseratiModels` (
+  `modeloBrand` varchar(8) DEFAULT NULL,
+  `modeloNombre` varchar(21) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+
+--
+-- Volcado de datos para la tabla `maseratiModels`
+--
+
+INSERT INTO `maseratiModels` (`modeloBrand`, `modeloNombre`) VALUES
+('Maserati', 'Maserati 8CM'),
+('Maserati', 'Maserati 3200 GT'),
+('Maserati', 'Maserati 5000 GT'),
+('Maserati', 'Maserati A6'),
+('Maserati', 'Maserati Biturbo'),
+('Maserati', 'Maserati Coupe/Spyder'),
+('Maserati', 'Maserati Ghibli'),
+('Maserati', 'Maserati GranTurismo'),
+('Maserati', 'Maserati Khamsin'),
+('Maserati', 'Maserati Levante'),
+('Maserati', 'Maserati Quattroporte'),
+('Maserati', 'Maserati Sebring');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `mazdaModels`
+--
+
+CREATE TABLE `mazdaModels` (
+  `modeloBrand` varchar(5) DEFAULT NULL,
+  `modeloNombre` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+
+--
+-- Volcado de datos para la tabla `mazdaModels`
+--
+
+INSERT INTO `mazdaModels` (`modeloBrand`, `modeloNombre`) VALUES
+('Mazda', 'Mazda 3'),
+('Mazda', 'Mazda 5'),
+('Mazda', 'Mazda 6'),
+('Mazda', 'Mazda 323'),
+('Mazda', 'Mazda 626'),
+('Mazda', 'Mazda 787B'),
+('Mazda', 'Mazda Atenza'),
+('Mazda', 'Mazda Axela'),
+('Mazda', 'Mazda Serie B'),
+('Mazda', 'Mazda BT-50'),
+('Mazda', 'Mazda Chantez'),
+('Mazda', 'Mazda CX-3'),
+('Mazda', 'Mazda CX-5'),
+('Mazda', 'Mazda CX-7'),
+('Mazda', 'Mazda CX-9'),
+('Mazda', 'Mazda Demio'),
+('Mazda', 'Mazda Furai'),
+('Mazda', 'Mazda Cosmo'),
+('Mazda', 'Mazda Miata'),
+('Mazda', 'Mazda Millenia'),
+('Mazda', 'Mazda Minagi Concept'),
+('Mazda', 'Mazda MX-5'),
+('Mazda', 'Mazda MXR-01'),
+('Mazda', 'Mazda Navajo'),
+('Mazda', 'Mazda Premacy'),
+('Mazda', 'Mazda RX-8'),
+('Mazda', 'Mazda RX-7'),
+('Mazda', 'Mazda T'),
+('Mazda', 'Mazda Takeri Concept'),
+('Mazda', 'Mazda Tribute'),
+('Mazda', 'Mazda Xedos');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `mercedezModels`
+--
+
+CREATE TABLE `mercedezModels` (
+  `modeloBrand` varchar(13) DEFAULT NULL,
+  `modeloNombre` varchar(39) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+
+--
+-- Volcado de datos para la tabla `mercedezModels`
+--
+
+INSERT INTO `mercedezModels` (`modeloBrand`, `modeloNombre`) VALUES
+('Mercedes-Benz', 'Mercedes 35 CV'),
+('Mercedes-Benz', 'Mercedes-Benz 190'),
+('Mercedes-Benz', 'Mercedes-Benz 190 SL'),
+('Mercedes-Benz', 'Mercedes-Benz 300 SL'),
+('Mercedes-Benz', 'Mercedes-Benz 300SEL 6.3'),
+('Mercedes-Benz', 'Mercedes-Benz 600'),
+('Mercedes-Benz', 'Mercedes-Benz 770'),
+('Mercedes-Benz', 'Mercedes-Benz Clase A'),
+('Mercedes-Benz', 'Mercedes-Benz Actros'),
+('Mercedes-Benz', 'Mercedes-Benz Clase B'),
+('Mercedes-Benz', 'Benz Patent-Motorwagen'),
+('Mercedes-Benz', 'Mercedes-Benz Clase C'),
+('Mercedes-Benz', 'Mercedes-Benz C111'),
+('Mercedes-Benz', 'Mercedes-Benz C112'),
+('Mercedes-Benz', 'Mercedes-Benz Citan'),
+('Mercedes-Benz', 'Mercedes-Benz Clase CL'),
+('Mercedes-Benz', 'Mercedes-Benz Clase C Sportcoupe'),
+('Mercedes-Benz', 'Mercedes-Benz Clase CLC'),
+('Mercedes-Benz', 'Mercedes-Benz Clase CLK'),
+('Mercedes-Benz', 'Mercedes-Benz Clase CLS'),
+('Mercedes-Benz', 'Mercedes-Benz W212 E63 AMG'),
+('Mercedes-Benz', 'Mercedes-Benz Econic'),
+('Mercedes-Benz', 'Mercedes-Benz Clase G'),
+('Mercedes-Benz', 'Mercedes-Benz Clase GLS'),
+('Mercedes-Benz', 'Mercedes-Benz Clase GLA'),
+('Mercedes-Benz', 'Mercedes-Benz Clase GLE'),
+('Mercedes-Benz', 'Mercedes-Benz Clase GLC'),
+('Mercedes-Benz', 'Mercedes-AMG GT'),
+('Mercedes-Benz', 'Mercedes-Benz L 319'),
+('Mercedes-Benz', 'Mercedes-Benz MB 100'),
+('Mercedes-Benz', 'Mercedes-Benz Clase E'),
+('Mercedes-Benz', 'Mercedes-Benz Clase S'),
+('Mercedes-Benz', 'Mercedes-Benz N1300'),
+('Mercedes-Benz', 'Mercedes-Benz Necar 5'),
+('Mercedes-Benz', 'Mercedes-Benz Clase R'),
+('Mercedes-Benz', 'Mercedes-Benz R107'),
+('Mercedes-Benz', 'Mercedes S63 AMG'),
+('Mercedes-Benz', 'Mercedes S65 AMG'),
+('Mercedes-Benz', 'Mercedes Simplex'),
+('Mercedes-Benz', 'Mercedes-Benz Clase SL'),
+('Mercedes-Benz', 'Mercedes SL 65 AMG Black Series Edition'),
+('Mercedes-Benz', 'Mercedes-Benz Clase SLC'),
+('Mercedes-Benz', 'Mercedes-Benz SLK'),
+('Mercedes-Benz', 'Mercedes-Benz SLR McLaren'),
+('Mercedes-Benz', 'Mercedes-Benz SLS AMG'),
+('Mercedes-Benz', 'Mercedes-Benz SS'),
+('Mercedes-Benz', 'Mercedes-Benz SSK'),
+('Mercedes-Benz', 'Mercedes-Benz T2'),
+('Mercedes-Benz', 'Mercedes-Benz Vaneo'),
+('Mercedes-Benz', 'Mercedes-Benz Vito'),
+('Mercedes-Benz', 'Mercedes-Benz W114/W115'),
+('Mercedes-Benz', 'Mercedes-Benz W123'),
+('Mercedes-Benz', 'Mercedes-Benz W125'),
+('Mercedes-Benz', 'Mercedes-Benz W180'),
+('Mercedes-Benz', 'Mercedes-Benz W201');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `miniModels`
+--
+
+CREATE TABLE `miniModels` (
+  `modeloBrand` varchar(4) DEFAULT NULL,
+  `modeloNombre` varchar(26) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+
+--
+-- Volcado de datos para la tabla `miniModels`
+--
+
+INSERT INTO `miniModels` (`modeloBrand`, `modeloNombre`) VALUES
+('Mini', 'Mini Beachcomber'),
+('Mini', 'Mini Clubman'),
+('Mini', 'Mini Countryman'),
+('Mini', 'Mini Paceman'),
+('Mini', 'Mini E'),
+('Mini', 'Mini John Cooper Works WRC'),
+('Mini', 'Mini All4 Racing'),
+('Mini', 'Mini Coupe and Roadster'),
+('Mini', 'Mini Hatch');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `mitsubishiModels`
+--
+
+CREATE TABLE `mitsubishiModels` (
+  `modeloBrand` varchar(10) DEFAULT NULL,
+  `modeloNombre` varchar(27) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+
+--
+-- Volcado de datos para la tabla `mitsubishiModels`
+--
+
+INSERT INTO `mitsubishiModels` (`modeloBrand`, `modeloNombre`) VALUES
+('Mitsubishi', 'Mitsubishi Carisma'),
+('Mitsubishi', 'Mitsubishi Chariot'),
+('Mitsubishi', 'Mitsubishi Colt'),
+('Mitsubishi', 'Mitsubishi Concept-RA'),
+('Mitsubishi', 'Mitsubishi Eclipse'),
+('Mitsubishi', 'Mitsubishi Endeavor'),
+('Mitsubishi', 'Mitsubishi Galant'),
+('Mitsubishi', 'Mitsubishi Galant VR-4'),
+('Mitsubishi', 'Mitsubishi Grandis'),
+('Mitsubishi', 'Mitsubishi i-MiEV'),
+('Mitsubishi', 'Mitsubishi L200'),
+('Mitsubishi', 'Mitsubishi Lancer'),
+('Mitsubishi', 'Mitsubishi Lancer Evolution'),
+('Mitsubishi', 'Mitsubishi Montero'),
+('Mitsubishi', 'Mitsubishi Nativa'),
+('Mitsubishi', 'Mitsubishi Outlander'),
+('Mitsubishi', 'Mitsubishi RVR');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `nissanModels`
+--
+
+CREATE TABLE `nissanModels` (
+  `modeloBrand` varchar(6) DEFAULT NULL,
+  `modeloNombre` varchar(24) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+
+--
+-- Volcado de datos para la tabla `nissanModels`
+--
+
+INSERT INTO `nissanModels` (`modeloBrand`, `modeloNombre`) VALUES
+('Nissan', 'Nissan 260Z'),
+('Nissan', 'Nissan 280 ZX'),
+('Nissan', 'Nissan 300 ZX'),
+('Nissan', 'Nissan 350Z'),
+('Nissan', 'Nissan 370Z'),
+('Nissan', 'Nissan Almera'),
+('Nissan', 'Nissan Armada'),
+('Nissan', 'Nissan Kicks'),
+('Nissan', 'Nissan Cube'),
+('Nissan', 'Nissan Esflow'),
+('Nissan', 'Nissan Fairlady Z'),
+('Nissan', 'Nissan Figaro'),
+('Nissan', 'Nissan Frontier'),
+('Nissan', 'Nissan GT-R'),
+('Nissan', 'Nissan Interstar'),
+('Nissan', 'Nissan Juke'),
+('Nissan', 'Nissan Kubistar'),
+('Nissan', 'Nissan Latio'),
+('Nissan', 'Nissan Leaf'),
+('Nissan', 'Nissan Livina'),
+('Nissan', 'Nissan Lucino'),
+('Nissan', 'Nissan Maxima'),
+('Nissan', 'Nissan March'),
+('Nissan', 'Nissan Micra'),
+('Nissan', 'Nissan Murano'),
+('Nissan', 'Nissan Navara'),
+('Nissan', 'Nissan Note'),
+('Nissan', 'Nissan NV200'),
+('Nissan', 'Nissan Pathfinder'),
+('Nissan', 'Nissan Patrol'),
+('Nissan', 'Nissan Pixo'),
+('Nissan', 'Nissan Platina'),
+('Nissan', 'Nissan Primastar'),
+('Nissan', 'Nissan Primera'),
+('Nissan', 'Nissan Qashqai'),
+('Nissan', 'Nissan Quest'),
+('Nissan', 'Nissan R90C'),
+('Nissan', 'Nissan Sentra'),
+('Nissan', 'Nissan Serena'),
+('Nissan', 'Nissan Sileighty'),
+('Nissan', 'Nissan Silvia'),
+('Nissan', 'Nissan Skyline'),
+('Nissan', 'Nissan Skyline Crossover'),
+('Nissan', 'Nissan Teana'),
+('Nissan', 'Nissan Terrano II'),
+('Nissan', 'Nissan Tiida'),
+('Nissan', 'Nissan Titan'),
+('Nissan', 'Nissan Trade'),
+('Nissan', 'Nissan Tsuru V16'),
+('Nissan', 'Nissan URGE'),
+('Nissan', 'Nissan Urvan'),
+('Nissan', 'Nissan Vanette'),
+('Nissan', 'Nissan Versa');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `opelModels`
+--
+
+CREATE TABLE `opelModels` (
+  `modeloBrand` varchar(4) DEFAULT NULL,
+  `modeloNombre` varchar(16) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+
+--
+-- Volcado de datos para la tabla `opelModels`
+--
+
+INSERT INTO `opelModels` (`modeloBrand`, `modeloNombre`) VALUES
+('Opel', 'Opel Admiral'),
+('Opel', 'Opel Adam'),
+('Opel', 'Opel Agila'),
+('Opel', 'Opel Antara'),
+('Opel', 'Opel Arena'),
+('Opel', 'Opel Ascona'),
+('Opel', 'Opel Astra'),
+('Opel', 'Opel Blitz'),
+('Opel', 'Opel Combo'),
+('Opel', 'Opel Calibra'),
+('Opel', 'Opel Corsa'),
+('Opel', 'Opel Diplomat'),
+('Opel', 'Opel Frontera'),
+('Opel', 'Opel Grandland X'),
+('Opel', 'Opel GT'),
+('Opel', 'Opel Insignia'),
+('Opel', 'Opel K-180'),
+('Opel', 'Opel Kadett'),
+('Opel', 'Opel Kapitan'),
+('Opel', 'Opel Manta'),
+('Opel', 'Opel Crossland X'),
+('Opel', 'Opel Meriva'),
+('Opel', 'Opel Mokka'),
+('Opel', 'Opel Monterey'),
+('Opel', 'Opel Monza'),
+('Opel', 'Opel Movano'),
+('Opel', 'Buick Cascada'),
+('Opel', 'Opel Omega'),
+('Opel', 'Opel Olympia'),
+('Opel', 'Opel Rekord'),
+('Opel', 'Opel Senator'),
+('Opel', 'Opel Signum'),
+('Opel', 'Opel Speedster'),
+('Opel', 'Opel Tigra'),
+('Opel', 'Opel Vectra'),
+('Opel', 'Opel Vivaro'),
+('Opel', 'Opel Zafira');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `peugeotModels`
+--
+
+CREATE TABLE `peugeotModels` (
+  `modeloBrand` varchar(7) DEFAULT NULL,
+  `modeloNombre` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+
+--
+-- Volcado de datos para la tabla `peugeotModels`
+--
+
+INSERT INTO `peugeotModels` (`modeloBrand`, `modeloNombre`) VALUES
+('Peugeot', 'Peugeot 104'),
+('Peugeot', 'Peugeot 106'),
+('Peugeot', 'Peugeot 108'),
+('Peugeot', 'Peugeot 201'),
+('Peugeot', 'Peugeot 202'),
+('Peugeot', 'Peugeot 203'),
+('Peugeot', 'Peugeot 204'),
+('Peugeot', 'Peugeot 205'),
+('Peugeot', 'Peugeot 206'),
+('Peugeot', 'Peugeot 207'),
+('Peugeot', 'Peugeot 207 Compact'),
+('Peugeot', 'Peugeot 208'),
+('Peugeot', 'Peugeot 301'),
+('Peugeot', 'Peugeot 304'),
+('Peugeot', 'Peugeot 305'),
+('Peugeot', 'Peugeot 306'),
+('Peugeot', 'Peugeot 307'),
+('Peugeot', 'Peugeot 308'),
+('Peugeot', 'Peugeot 309'),
+('Peugeot', 'Peugeot 401'),
+('Peugeot', 'Peugeot 402'),
+('Peugeot', 'Peugeot 403'),
+('Peugeot', 'Peugeot 404'),
+('Peugeot', 'Peugeot 405'),
+('Peugeot', 'Peugeot 406'),
+('Peugeot', 'Peugeot 407'),
+('Peugeot', 'Peugeot 408'),
+('Peugeot', 'Peugeot 504'),
+('Peugeot', 'Peugeot 505'),
+('Peugeot', 'Peugeot 508'),
+('Peugeot', 'Peugeot 604'),
+('Peugeot', 'Peugeot 605'),
+('Peugeot', 'Peugeot 607'),
+('Peugeot', 'Peugeot 806'),
+('Peugeot', 'Peugeot 806 Runabout'),
+('Peugeot', 'Peugeot 807'),
+('Peugeot', 'Peugeot 907'),
+('Peugeot', 'Peugeot 908 RC'),
+('Peugeot', 'Peugeot 1007'),
+('Peugeot', 'Peugeot 2008'),
+('Peugeot', 'Peugeot 3008'),
+('Peugeot', 'Peugeot 4007'),
+('Peugeot', 'Peugeot 4008'),
+('Peugeot', 'Peugeot 5008'),
+('Peugeot', 'Peugeot Bipper'),
+('Peugeot', 'Peugeot Boxer'),
+('Peugeot', 'Citycar (PSA/Toyota)'),
+('Peugeot', 'Peugeot EX3'),
+('Peugeot', 'Peugeot Expert'),
+('Peugeot', 'Peugeot Hoggar'),
+('Peugeot', 'Peugeot J5'),
+('Peugeot', 'Peugeot L76'),
+('Peugeot', 'Peugeot Onyx'),
+('Peugeot', 'Peugeot Oxia'),
+('Peugeot', 'Peugeot e-Legend'),
+('Peugeot', 'Peugeot P4'),
+('Peugeot', 'Peugeot RCZ'),
+('Peugeot', 'Peugeot Tipo 1'),
+('Peugeot', 'Peugeot Tipo 4'),
+('Peugeot', 'Peugeot Tipo 8'),
+('Peugeot', 'Peugeot Tipo 10'),
+('Peugeot', 'Peugeot Tipo 56'),
+('Peugeot', 'Peugeot Tipo 58'),
+('Peugeot', 'Peugeot Tipo 69'),
+('Peugeot', 'Peugeot Tipo 105'),
+('Peugeot', 'Peugeot Tipo 163'),
+('Peugeot', 'Peugeot Tipo 176'),
+('Peugeot', 'Peugeot Tipo 190');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `pontiacModels`
+--
+
+CREATE TABLE `pontiacModels` (
+  `modeloBrand` varchar(7) DEFAULT NULL,
+  `modeloNombre` varchar(18) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+
+--
+-- Volcado de datos para la tabla `pontiacModels`
+--
+
+INSERT INTO `pontiacModels` (`modeloBrand`, `modeloNombre`) VALUES
+('Pontiac', 'Pontiac Fiero'),
+('Pontiac', 'Pontiac Firebird'),
+('Pontiac', 'Pontiac Firefly'),
+('Pontiac', 'Pontiac G5'),
+('Pontiac', 'Pontiac G6'),
+('Pontiac', 'Pontiac G8'),
+('Pontiac', 'Pontiac Grand Am'),
+('Pontiac', 'Pontiac Grand Prix'),
+('Pontiac', 'Pontiac GTO'),
+('Pontiac', 'Pontiac LeMans'),
+('Pontiac', 'Pontiac Matiz'),
+('Pontiac', 'Pontiac Aztek'),
+('Pontiac', 'Pontiac Phoenix'),
+('Pontiac', 'Pontiac Solstice'),
+('Pontiac', 'Pontiac Sunbird'),
+('Pontiac', 'Pontiac Sunfire'),
+('Pontiac', 'Pontiac Tempest'),
+('Pontiac', 'Pontiac Torrent'),
+('Pontiac', 'Pontiac Ventura'),
+('Pontiac', 'Pontiac Vibe');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `porscheModels`
+--
+
+CREATE TABLE `porscheModels` (
+  `modeloBrand` varchar(7) DEFAULT NULL,
+  `modeloNombre` varchar(29) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+
+--
+-- Volcado de datos para la tabla `porscheModels`
+--
+
+INSERT INTO `porscheModels` (`modeloBrand`, `modeloNombre`) VALUES
+('Porsche', 'Porsche 64'),
+('Porsche', 'Porsche 356'),
+('Porsche', 'Porsche 597'),
+('Porsche', 'Porsche 695'),
+('Porsche', 'Porsche 901'),
+('Porsche', 'Porsche 904 GTS'),
+('Porsche', 'Porsche 911'),
+('Porsche', 'Porsche 911 Carrera RSR Turbo'),
+('Porsche', 'Porsche 911 GT2'),
+('Porsche', 'Porsche 911 GT3 RS'),
+('Porsche', 'Porsche 914'),
+('Porsche', 'Porsche 918'),
+('Porsche', 'Porsche 924'),
+('Porsche', 'Porsche 928'),
+('Porsche', 'Porsche 931 Club Sport'),
+('Porsche', 'Porsche 942'),
+('Porsche', 'Porsche 944'),
+('Porsche', 'Porsche 959'),
+('Porsche', 'Porsche 968'),
+('Porsche', 'Porsche Boxster'),
+('Porsche', 'Porsche C88'),
+('Porsche', 'Porsche Cajun'),
+('Porsche', 'Porsche Carrera GT'),
+('Porsche', 'Porsche Cayenne'),
+('Porsche', 'Porsche Cayman'),
+('Porsche', 'Porsche Junior'),
+('Porsche', 'Porsche Macan'),
+('Porsche', 'Porsche Panamera'),
+('Porsche', 'Porsche Spirit'),
+('Porsche', 'Porsche Super');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `renaultModels`
+--
+
+CREATE TABLE `renaultModels` (
+  `modeloBrand` varchar(7) DEFAULT NULL,
+  `modeloNombre` varchar(29) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+
+--
+-- Volcado de datos para la tabla `renaultModels`
+--
+
+INSERT INTO `renaultModels` (`modeloBrand`, `modeloNombre`) VALUES
+('Renault', 'Renault 3'),
+('Renault', 'Renault 4'),
+('Renault', 'Renault 4 furgoneta'),
+('Renault', 'Renault 40CV'),
+('Renault', 'Renault 4CV'),
+('Renault', 'Renault 5'),
+('Renault', 'Renault 6'),
+('Renault', 'Renault 7'),
+('Renault', 'Renault 8'),
+('Renault', 'Renault 9/11'),
+('Renault', 'Renault 10'),
+('Renault', 'Renault 12'),
+('Renault', 'Renault 14'),
+('Renault', 'Renault 15/17'),
+('Renault', 'Renault 16'),
+('Renault', 'Renault 18'),
+('Renault', 'Renault 19'),
+('Renault', 'Renault 20/30'),
+('Renault', 'Renault 21'),
+('Renault', 'Renault 25'),
+('Renault', 'Renault 900'),
+('Renault', 'Alpine A110'),
+('Renault', 'Alpine A610'),
+('Renault', 'Renault Altica'),
+('Renault', 'Renault Argos'),
+('Renault', 'Renault Arkana'),
+('Renault', 'Renault Avantime'),
+('Renault', 'Renault Be Bop'),
+('Renault', 'Renault Captur'),
+('Renault', 'Renault Caravelle'),
+('Renault', 'Renault Celtaquatre'),
+('Renault', 'Renault Clio'),
+('Renault', 'Renault Dauphine'),
+('Renault', 'Renault Duster'),
+('Renault', 'Renault Duster Oroch'),
+('Renault', 'Renault Egeus'),
+('Renault', 'Renault Espace'),
+('Renault', 'Renault Express'),
+('Renault', 'Renault Fluence'),
+('Renault', 'Renault Fregate'),
+('Renault', 'Renault Fuego'),
+('Renault', 'Renault Grand Modus'),
+('Renault', 'Renault Juvaquatre'),
+('Renault', 'Renault Kadjar'),
+('Renault', 'Renault Kangoo'),
+('Renault', 'Renault Kerax'),
+('Renault', 'Renault Koleos'),
+('Renault', 'Renault Kwid'),
+('Renault', 'Renault Laguna'),
+('Renault', 'Renault Latitude'),
+('Renault', 'Renault Magnum'),
+('Renault', 'Renault Mascott'),
+('Renault', 'Renault Master'),
+('Renault', 'Renault Maxity'),
+('Renault', 'Renault Megane'),
+('Renault', 'Renault Megane III RS Trophy'),
+('Renault', 'Renault Modus'),
+('Renault', 'Renault Monaquatre'),
+('Renault', 'Renault Nepta'),
+('Renault', 'Renault Premium Distribution'),
+('Renault', 'Renault Premium Lander'),
+('Renault', 'Renault Premium Long Distance'),
+('Renault', 'Renault Racoon'),
+('Renault', 'Renault Espace F1'),
+('Renault', 'Renault Nervastella'),
+('Renault', 'Renault Safrane'),
+('Renault', 'Renault Sandero'),
+('Renault', 'Dacia Sandero'),
+('Renault', 'Renault Scenic'),
+('Renault', 'Renault Samsung SM7'),
+('Renault', 'Renault Sport R.S. 01'),
+('Renault', 'Renault Supercinco'),
+('Renault', 'Renault Symbol'),
+('Renault', 'Renault Talisman'),
+('Renault', 'Renault Trafic'),
+('Renault', 'Renault Trucks T'),
+('Renault', 'Renault Twingo'),
+('Renault', 'Renault Twizy'),
+('Renault', 'Renault Vel Satis'),
+('Renault', 'Renault Vesta 2'),
+('Renault', 'Renault Voiturette'),
+('Renault', 'Renault Wind');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `rollsroyceModels`
+--
+
+CREATE TABLE `rollsroyceModels` (
+  `modeloBrand` varchar(11) DEFAULT NULL,
+  `modeloNombre` varchar(25) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+
+--
+-- Volcado de datos para la tabla `rollsroyceModels`
+--
+
+INSERT INTO `rollsroyceModels` (`modeloBrand`, `modeloNombre`) VALUES
+('Rolls-Royce', 'Rolls-Royce 25/30'),
+('Rolls-Royce', 'Rolls-Royce 30 hp'),
+('Rolls-Royce', 'Rolls-Royce Camargue'),
+('Rolls-Royce', 'Rolls-Royce Corniche'),
+('Rolls-Royce', 'Rolls-Royce Cullinan'),
+('Rolls-Royce', 'Rolls-Royce Phantom'),
+('Rolls-Royce', 'Rolls-Royce Phantom I'),
+('Rolls-Royce', 'Rolls-Royce Phantom II'),
+('Rolls-Royce', 'Rolls-Royce Phantom III'),
+('Rolls-Royce', 'Rolls-Royce Phantom IV'),
+('Rolls-Royce', 'Rolls-Royce Phantom V'),
+('Rolls-Royce', 'Rolls-Royce Phantom VI'),
+('Rolls-Royce', 'Rolls-Royce Silver Cloud'),
+('Rolls-Royce', 'Rolls-Royce Silver Dawn'),
+('Rolls-Royce', 'Rolls-Royce Silver Ghost'),
+('Rolls-Royce', 'Rolls-Royce Silver Seraph'),
+('Rolls-Royce', 'Rolls-Royce Silver Shadow'),
+('Rolls-Royce', 'Rolls-Royce Silver Spirit'),
+('Rolls-Royce', 'Rolls-Royce Silver Wraith'),
+('Rolls-Royce', 'Rolls-Royce Twenty'),
+('Rolls-Royce', 'Rolls-Royce V-8'),
+('Rolls-Royce', 'Rolls-Royce Wraith');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
